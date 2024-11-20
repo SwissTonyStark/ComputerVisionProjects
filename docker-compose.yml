@@ -1,0 +1,8 @@
+services:
+  image-classifier:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+    container_name: image-classifier-container
